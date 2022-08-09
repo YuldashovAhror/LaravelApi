@@ -38,7 +38,7 @@ class DeskController extends Controller
      */
     public function show($id)
     {
-        return Desk::find($id);
+        return Desk::findorFail($id);
     }
 
     /**
